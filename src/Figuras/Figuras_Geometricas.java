@@ -16,7 +16,7 @@ public class Figuras_Geometricas {
         return nombre;
     }
 
-    public  void mostrar_datos(){
+    public  void mostrarInf(){
         System.out.println("------------------------------\n");
         System.out.println("           Bienvenido        \n");
         System.out.println("Datos: \n");

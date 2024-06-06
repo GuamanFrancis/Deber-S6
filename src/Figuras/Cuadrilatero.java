@@ -25,7 +25,7 @@ public class Cuadrilatero extends  Figura_2D {
             area = lado1*lado2;
 
         }
-        mostrar_datos();
+        mostrarInf();
         System.out.println("El area del "+nombre+" es de: "+area+"\n");
 
 

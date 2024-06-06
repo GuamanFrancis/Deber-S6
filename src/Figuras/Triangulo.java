@@ -1,11 +1,11 @@
 package Figuras;
 
-public class Triangulo extends Figura_2D{
+public class Triangulo extends Regulares{
     public double altura;
     public double base;
 
-    public Triangulo(int nlados, String nombre, double area, double perimetro, double altura, double base){
-        super (nlados,nombre,area,perimetro);
+    public Triangulo(int nlados, String nombre, double area, double perimetro, String tipo,double altura, double base){
+        super (nlados,nombre,area,perimetro,tipo);
         this.base = base;
         this.altura = altura;
     }
@@ -37,10 +37,11 @@ public class Triangulo extends Figura_2D{
         return 3*Nlados;
 
     }
+    @Override
 
 
-    public void mostrardatos(){
-       mostrar_datos();
+    public void mostrarInf(){
+        mostrarInf();
         System.out.println("El área del "+nombre+" es de: "+ calcular_area()+" \n");
         System.out.println("El perímetro del "+nombre+" es de: " + calcular_perimetro());
     }
